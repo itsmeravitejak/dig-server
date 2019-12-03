@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 app.use(bodyParser.json());
+var cors = require('cors');
+app.use(cors());
+
 const port = 3000
 var dig=require("node-dig-dns")
 
